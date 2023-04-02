@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+
+html {
+  background-color: rgb(30, 30, 32);
+  color: rgb(200, 200, 210);
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+.stats-bottom-left {
+  position: absolute;
+  top: calc(100vh - 50px);
+  left: 1em;
+}
+.stats-bottom-right {
+  position: absolute;
+  top: calc(100vh - 50px);
+  right: 1em;
+}
+.o-acp__menu {
+    max-height: calc(100vh - 200px);
+    /* overflow: hidden; */
+    background-color: rgb(35, 35, 40);
+  }
+.o-acp__menu--top {
+  bottom: unset;
+}
+.o-tabs__nav-item-default--active {
+  border-bottom-color: #4285f4;
+  color: #4285f4;
+}
+.o-tabs__nav-item-wrapper {
+  padding: 0.5em;
+}
+.o-tabs__nav-item-default {
+  padding: 0.5em;
+}
+.o-ctrl-input input {
+  background-color: rgb(35, 35, 40);
+  color: inherit;
+  padding: 0.5em 1em;
+  border: none;
+}
+.o-ctrl-input {
+  padding: 1em 0;
+}
+.o-acp {
+  height: 100%;
+}
+.o-acp__menu {
+  padding: 1em;
+}
+pre {
+  overflow: scroll;
+  overflow-x: hidden;
+  max-height: calc(100vh - 200px);
+}
+.o-ctrl-input input:focus {
+  border-bottom: 2px solid #4285f4;
+  border-bottom-color: #4285f4;
+  outline: none;
+}
+
+
+@media (max-width: 500px) {
+    .o-tabs__nav {
+        display: block;
+    }
+    .o-acp__menu {
+        max-height: calc(100vh - 350px);
+    }
+    pre {
+        max-height: calc(100vh - 350px);
+      }
+}
+@media (min-width: 800px) {
+  body {
+    margin: 0 10em;
+  }
+  .stats-bottom-left {
+    left: 10em;
+  }
+  .stats-bottom-right {
+    right: 10em;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    margin: 0 20em;
+  }
+  .stats-bottom-left {
+    left: 20em;
+  }
+  .stats-bottom-right {
+    right: 20em;
+  }
+}
+@media (min-width: 1600px) {
+  body {
+    margin: 0 30em;
+  }
+  .stats-bottom-left {
+    left: 30em;
+  }
+  .stats-bottom-right {
+    right: 30em;
+  }
+}
+@media (min-width: 2000px) {
+  body {
+    margin: 0 40em;
+  }
+  .stats-bottom-left {
+    left: 40em;
+  }
+  .stats-bottom-right {
+    right: 40em;
+  }
+}
